@@ -16,6 +16,7 @@
             Name="nb3"
             Header="Visible Inline"
             SpinButtonPlacementMode="Inline"
+            ValueChanged="Nb3_ValueChanged"
             Visibility="Visible" />
         <NumberBox
             Name="nb4"
@@ -23,6 +24,7 @@
             SpinButtonPlacementMode="Compact"
             Visibility="Visible" />
         <Button Click="Button_Click" Content="Show Collapsed NumberBoxes" />
+        <Button Click="Button_Click_1" Content="Set Value programmatically" />
         <NumberBox
             Name="nb1"
             Header="Collapsed Inline"
@@ -32,6 +34,10 @@
             Name="nb2"
             Header="Collapsed Compact"
             SpinButtonPlacementMode="Compact"
+            Visibility="Collapsed" />
+        <TextBlock
+            Name="t1"
+            Text="This text should not be visible after setting Value programmatically."
             Visibility="Collapsed" />
     </StackPanel>
 </Window>

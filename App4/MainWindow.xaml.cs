@@ -33,5 +33,15 @@ namespace App4
 			nb1.Visibility = nb1.Visibility == Visibility.Collapsed ? Visibility.Visible : Visibility.Collapsed;
 			nb2.Visibility = nb2.Visibility == Visibility.Collapsed ? Visibility.Visible : Visibility.Collapsed;
 		}
+
+		private void Button_Click_1(object sender, RoutedEventArgs e)
+		{
+			nb3.Value = 1;
+		}
+
+		private void Nb3_ValueChanged(NumberBox sender, NumberBoxValueChangedEventArgs args)
+		{
+			t1.Visibility = Visibility.Visible;
+		}
 	}
 }
